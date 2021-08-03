@@ -1,0 +1,270 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Oswald', sans-serif;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+header {
+  height: 60px;
+  background-color: #333;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-content .brand {
+  font-size: 32px;
+  color: #fff;
+  text-decoration: none;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav li a {
+  display: block;
+  color: #fff;
+  min-width: 50px;
+  padding: 5px;
+  margin: 0 5px;
+}
+
+nav ul#user_info {
+  display: none;
+}
+
+#user_info li {
+  color: #fff;
+  margin: auto;
+  cursor: pointer;
+  font-size: 20px;
+  position: relative;
+}
+
+#user_info li .cart-products {
+  position: absolute;
+  width: 200px;
+  background: #ddd;
+  top: 51px;
+  padding: 10px;
+  color: #000;
+  border: 1px solid #2d6502;
+  display: none;
+}
+
+#user_info li i {
+  padding: 0 10px;
+}
+
+#user_info li .openCart {
+  color: #000;
+  margin: 0;
+  padding: 5px;
+  display: block;
+  text-align: center;
+  background-color: #2d6502;
+  list-style: none;
+}
+
+#user_info li .qty {
+  width: 20px;
+  height: 20px;
+  background: red;
+  border-radius: 50%;
+  text-align: center;
+  display: block;
+  position: absolute;
+  font-size: 16px;
+  line-height: 20px;
+  top: -8px;
+  right: 0px;
+  display: none;
+}
+
+/*form*/
+.section-form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40%;
+  background: #bc6ff1;
+  padding: 20px;
+}
+
+.section-form h2 {
+  font-size: 40px;
+  letter-spacing: 2px;
+  color: #52057b;
+  text-align: center;
+}
+
+.section-form form {
+  text-align: center;
+}
+
+.section-form form input {
+  display: block;
+  width: 100%;
+  margin: 5px 0;
+  height: 40px;
+  padding: 5px;
+  border: 1px solid #ddd;
+  font-family: 'Oswald', sans-serif;
+  outline: 0
+}
+
+.section-form form input[type="submit"] {
+  font-size: 22px;
+  text-transform: uppercase;
+  height: auto;
+  cursor: pointer;
+}
+
+.section-form form input[type="submit"]:hover {
+  opacity: 0.8;
+}
+
+#search {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #bbb;
+  border-radius: 5px;
+  font-size: 16px;
+  display: block;
+  font-family: 'Oswald', sans-serif;
+}
+
+/* products */
+.products {
+  width: 60%;
+  float: left;
+  margin: 10px 0;
+}
+
+.products-filter {
+  float: right;
+  width: 35%;
+  margin: 10px 0;
+}
+
+#size-filter {
+  width: 100%;
+  display: block;
+  padding: 2%;
+}
+
+#size-filter option {
+  font-size: 16px;
+}
+
+.fav-items {
+  width: 60%;
+  margin: 10px 0;
+}
+
+.product-item {
+  display: flex;
+  width: 100%;
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+  min-height: 150px;
+}
+
+.product-item-img {
+  width: 25%;
+  margin-right: 20px;
+}
+
+.edit-ptoduct {
+  display: block;
+  width: 140px;
+  border: none;
+  background-color: darkgreen;
+  color: #fff;
+  padding: 10px 15px;
+  cursor: pointer;
+  margin-bottom: 5px;
+}
+
+.product-item-desc a {
+  display: block;
+  font-size: 25px;
+  color: #333;
+  cursor: pointer;
+}
+
+.product-item-actions {
+  flex: 1;
+  text-align: right;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.add-to-cart {
+  display: block;
+  margin-left: auto;
+  background-color: darkgreen;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  font-family: 'Oswald', sans-serif;
+}
+
+.product-item-actions .favorite {
+  cursor: pointer;
+  display: block;
+  width: 20px;
+  margin-left: auto;
+}
+
+.item-details img {
+  width: 100%;
+  margin: 10px 0;
+  border: 1px solid #333;
+  padding: 2px;
+  height: 400px;
+  object-fit: cover;
+}
+
+.create-product {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 2.5em;
+  height: 2.5em;
+  background-color: #150fa0;
+  border-radius: 50%;
+  line-height: 2.5em;
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+}
+
+.create-product:hover {
+  opacity: 0.8;
+}
+
+.user-avatar {
+  width: 15em;
+  margin: 1em 0;
+  border-radius: 50%;
+}
